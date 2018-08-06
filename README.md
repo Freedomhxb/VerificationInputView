@@ -2,10 +2,10 @@
 使用方便的验证码输入框
 
 
-##使用方式
+## 使用方式
 
 1.
-  implementation 'com.hxb.verification:1.0.0'
+    implementation 'com.hxb.verification:1.0.0'
  
 2.
 
@@ -36,7 +36,7 @@
               });
               
               
-##属性
+## 属性
 
 |属性                |解释               |
 |:--------------------|:-----------------|
@@ -48,11 +48,11 @@
 |child_bg_focus|输入框获取焦点时的背景或者有文字的背景|
 |child_bg_normal|输入框没有文字时候的背景|
 
-##方法
+## 方法
 
-1. setChildInputType 设置输入框的输入类型,参考android.widget.TextView.setInputType(int)
+1.  setChildInputType 设置输入框的输入类型,参考android.widget.TextView.setInputType(int)
 
-2. getEditTextList  获取所有的输入框
+2.  getEditTextList  获取所有的输入框
 
-3. setChildCanClickable  设置输入框是否可以点击
+3.   setChildCanClickable  设置输入框是否可以点击
 
