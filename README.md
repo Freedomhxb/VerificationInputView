@@ -3,8 +3,9 @@
 
 
 ##使用方式
+
 1.
- implementation 'com.hxb.verification:1.0.0'
+  implementation 'com.hxb.verification:1.0.0'
  
 2.
 
@@ -48,9 +49,10 @@
 |child_bg_normal|输入框没有文字时候的背景|
 
 ##方法
-1.setChildInputType 设置输入框的输入类型,参考android.widget.TextView.setInputType(int)
 
-2.getEditTextList  获取所有的输入框
+1. setChildInputType 设置输入框的输入类型,参考android.widget.TextView.setInputType(int)
 
-3.setChildCanClickable  设置输入框是否可以点击
+2. getEditTextList  获取所有的输入框
+
+3. setChildCanClickable  设置输入框是否可以点击
 
