@@ -1,6 +1,6 @@
 # VerificationInputView
 使用方便的验证码输入框
-
+![image](https://github.com/Freedomhxb/VerificationInputView/blob/master/image/580476320145792042.jpg)
 
 ## 使用方式
 
