@@ -224,7 +224,6 @@ public class VerificationInputView extends LinearLayout {
                 if (length == 1) {
                     mEditText.setText("");
                 } else {
-                    //删除前面的
                     int index = mEditTextList.indexOf(mEditText);
                     if (index != 0) {
                         EditText editText = mEditTextList.get(index - 1);
