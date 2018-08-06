@@ -8,17 +8,17 @@
 
 #### 1.在 build.gradle 中添加依赖
 ```
- implementation 'com.hxb.verification:1.0.0'
+   implementation 'com.hxb:verification:1.0.0'
 ```
 #### 2.在XML布局文件中添加 VerificationInputView
 ```java
    <com.hxb.verification.VerificationInputView
-             android:id="@+id/verification_input_view_1"
+             android:id="@+id/verification_input_view"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              app:child_bg_focus="@drawable/layer_bottom_orange"
              app:child_bg_normal="@drawable/layer_bottom_gray"
-             >
+             />
 ```
 #### 3.设置监听 
  ```java
