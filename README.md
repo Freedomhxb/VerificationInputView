@@ -5,7 +5,7 @@
 ## 使用方式
 
 1.
-    implementation 'com.hxb.verification:1.0.0'
+` implementation 'com.hxb.verification:1.0.0'`
  
 2.
 
