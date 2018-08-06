@@ -23,7 +23,7 @@ publish {
     userOrg = 'hxb'
     groupId = 'com.hxb'
     artifactId = 'verification'
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.1'
     website = 'https://github.com/Freedomhxb/VerificationInputView'
 }
 
