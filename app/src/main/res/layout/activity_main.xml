@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.hxb.verification.VerificationInputView
+            android:id="@+id/verification_input_view_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:child_bg_focus="@drawable/layer_bottom_orange"
+            app:child_bg_normal="@drawable/layer_bottom_gray"
+            >
+        </com.hxb.verification.VerificationInputView>
+
+        <com.hxb.verification.VerificationInputView
+            android:id="@+id/verification_input_view_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:child_bg_focus="@drawable/shape_verification_focus"
+            app:child_bg_normal="@drawable/shape_verification_normal"
+            app:child_count="5"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="child不可以点击的↓"/>
+
+        <com.hxb.verification.VerificationInputView
+            android:id="@+id/verification_input_view_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:child_bg_focus="@drawable/shape_verification_focus"
+            app:child_bg_normal="@drawable/shape_verification_normal"
+            app:child_count="5"
+            />
+    </LinearLayout>
+
+</ScrollView>

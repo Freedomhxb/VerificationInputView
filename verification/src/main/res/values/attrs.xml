@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VerificationInputView">
+
+        <attr name="child_count" format="integer"/>
+        <attr name="child_left_margin" format="dimension"/>
+        <attr name="child_right_margin" format="dimension"/>
+        <attr name="child_width" format="dimension"/>
+        <attr name="child_height" format="dimension"/>
+        <attr name="child_bg_focus" format="reference"/>
+        <attr name="child_bg_normal" format="reference"/>
+
+    </declare-styleable>
+</resources>
