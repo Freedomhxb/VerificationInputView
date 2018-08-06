@@ -104,6 +104,26 @@ public class VerificationInputView extends LinearLayout {
 
     }
 
+    public void setCursorVisible(boolean visible){
+        for(int i=0;i<mEditTextList.size();i++){
+            EditText editText = mEditTextList.get(i);
+            editText.setCursorVisible(visible);
+        }
+    }
+    public void clear() {
+        for (int i = mEditTextList.size() - 1; i >= 0; i--) {
+            EditText editText = mEditTextList.get(i);
+            editText.setText("");
+
+            if (i == 0) {
+                editText.requestFocus();
+                setBg(editText, true);
+            } else {
+                setBg(editText, false);
+            }
+        }
+    }
+
     public void setChildInputType(int inputType) {
         for (EditText editText : mEditTextList) {
             editText.setInputType(inputType);
@@ -151,9 +171,9 @@ public class VerificationInputView extends LinearLayout {
             editText.setOnFocusChangeListener(new OnFocusChangeListener() {
                 @Override
                 public void onFocusChange(View v, boolean hasFocus) {
+
                     setBg(editText, hasFocus);
                     editText.setSelection(editText.getText().toString().length());
-
                 }
             });
             addView(editText, i);
@@ -161,14 +181,19 @@ public class VerificationInputView extends LinearLayout {
         }
     }
 
+    @SuppressWarnings("deprecation")
     private void setBg(EditText editText, boolean focus) {
-        if (mChildBgNormal != null && !focus) {
-            if (mChildBgFocus != null && editText.getText().toString().length() == 1) {
+        if (mChildBgNormal == null || mChildBgFocus == null) {
+            return;
+        }
+
+        if (!focus) {
+            if (editText.getText().toString().length() == 1) {
                 editText.setBackgroundDrawable(mChildBgFocus);
             } else {
                 editText.setBackgroundDrawable(mChildBgNormal);
             }
-        } else if (mChildBgFocus != null && focus) {
+        } else {
             editText.setBackgroundDrawable(mChildBgFocus);
         }
     }

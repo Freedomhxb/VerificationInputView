@@ -24,6 +24,13 @@
             >
         </com.hxb.verification.VerificationInputView>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="clear"
+            android:text="清空↑"/>
+
         <com.hxb.verification.VerificationInputView
             android:id="@+id/verification_input_view_2"
             android:layout_width="wrap_content"

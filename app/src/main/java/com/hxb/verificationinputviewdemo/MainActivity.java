@@ -13,6 +13,7 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity {
 
     private VerificationInputView mVerificationInputView1;
+    private VerificationInputView mVerificationInputView2;
     private VerificationInputView mVerificationInputView3;
 
     private String mTag= MainActivity.class.getName();
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mVerificationInputView1 = findViewById(R.id.verification_input_view_1);
+
         mVerificationInputView1.setListener(new VerificationInputView.Listener() {
             @Override
             public void onChange(String[] strings) {
@@ -36,12 +38,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mVerificationInputView2 = findViewById(R.id.verification_input_view_2);
+        mVerificationInputView2.setCursorVisible(false);
+
 
         mVerificationInputView3 = findViewById(R.id.verification_input_view_3);
         mVerificationInputView3.setChildCanClickable(false);
-
-
-
     }
 
+    public void clear(View view){
+        mVerificationInputView1.clear();
+    }
 }
