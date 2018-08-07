@@ -8,7 +8,7 @@
 
 #### 1.在 build.gradle 中添加依赖
 ```
-   implementation 'com.hxb:verification:1.0.0'
+   implementation 'com.hxb:verification:1.0.1'
 ```
 #### 2.在XML布局文件中添加 VerificationInputView
 ```java
@@ -55,7 +55,11 @@
 
 ##### 2.  getEditTextList  获取所有的输入框
 
-##### 3.   setChildCanClickable  设置输入框是否可以点击
+##### 3.   setChildCanClickable  设置输入框是否可以点击'
+
+##### 4.  clear 清除输入框的所有内容
+
+##### 5.   setCursorVisible  是否显示光标
 
 License
 -------
